@@ -1,0 +1,13 @@
+Current Version: 3.2.1
+
+Features Upgraded:
+=================
+
+1.  Interfaces support added.
+2.  MongoConnect now support dynamic host & port.
+  
+    
+Important Updates: 
+=================
+1.  TechMVC::execute_url() has been renamed to TechMVC::processAction(). So remember to update it on each controllers for sure.
+

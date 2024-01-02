@@ -1,0 +1,29 @@
+/*  Theme: Default  */
+
+body {
+  background: url("../icon/bg-green.jpg") repeat fixed 0 0 transparent;
+}
+
+#wrapper {
+  width: 981px;
+  margin: 0 auto;
+}
+
+#header { }
+
+#body {
+  background:url("../icon/header.gif") no-repeat scroll 0 0 transparent;
+  height:274px;
+  width:981px;
+  margin-top:150px;
+  padding: 20px;
+}
+
+#footer { }
+
+.home { width:930px; } 
+.home a { color: #0CFAFA; text-decoration: none; }
+.home a:hover { text-decoration: underline; color: #FAC30C;}
+.home p { color: #ffffff; margin: 5px; text-align: justify; font-size: 14px; }
+.home .top  { height: 150px; }
+.home .bottom { padding: 10px; height: 75px;  }

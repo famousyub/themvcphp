@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=<?= $var->defaultCharacterSet ?>" />
+    <title> <?=  $var->title  ?> - <?=  $var->host  ?> </title>
+    <?= $base_data['#meta_data']  ?>
+    
+    <?= (!empty($base_data['#custom_link_tags']))?$base_data['#custom_link_tags']:'' ?>
+    
+    <?=  $base_data['#ui_style']['css']  ?>
+    
+    <?=  $base_data['#ui_style']['js']  ?>
+    
+  </head>
+  
+  <body>
+  
+    <div id="wrapper">
+    
+      <div id="header">
+        <?=	self::HTMLBlock('#header')	?>
+      </div>
+      <div class="spacer"></div>
+	  
+      <div id="body">
+        <?=	self::HTMLBlock('#body')	?>
+      </div>
+      <div class="spacer"></div>
+
+      <div id="footer">
+        <?=	self::HTMLBlock('#footer')	?>
+      </div>
+      <div class="spacer"></div>
+      
+    </div>
+    
+  </body>
+  
+</html>

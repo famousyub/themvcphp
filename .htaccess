@@ -1,0 +1,21 @@
+<FilesMatch "\.(engine|inc|info|install|module|profile|test|po|sh|theme|tpl(\.php)?|xtmpl|svn-base)$|^(code-style\.pl|Entries.*|Repository|Root|Tag|Template|all-wcprops|entries|format)$">
+  Order allow,deny
+</FilesMatch>
+
+Options -Indexes
+
+Options +FollowSymLinks
+
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+#  RewriteBase /
+  
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !=/favicon.ico
+  
+  RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+</IfModule>
+
